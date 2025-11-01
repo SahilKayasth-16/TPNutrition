@@ -1,0 +1,176 @@
+/* General Page Styles */
+.body {
+  height: 100vh;
+  background-image: url('../assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* ✅ fixed background */
+}
+.transformpage {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #0c5b1a;
+}
+
+.transformpage h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Navigation Bar */
+.navigationBar {
+  background-image: linear-gradient(#0c5b1a, #282525);
+  color: #fff;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: slideDown 0.8s ease-in-out; /* Slide down animation */
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.navigationBar .cotnainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navigationBar span {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+#logo {
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.container1 ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.container1 a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.container1 a:hover {
+  color: #00b894;
+  transform: scale(1.1);
+}
+
+/* Grid Section */
+.imageSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Transformation Card */
+.trnasformCard {
+  width: 300px;
+  background: white;
+  border: 2px solid #0c5b1a;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.trnasformCard:hover {
+  transform: scale(1.03);
+}
+
+/* Images */
+.img {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.beforeImg, .afterImg {
+  width: 125px;
+  height: 125px;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  object-position: center;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #eee;
+}
+
+/* Client Details */
+.clientDetails {
+  margin-top: 10px;
+}
+
+.clientDetails h3 {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.clientDetails p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  .transformCard {
+    width: 80%;
+  }
+
+  .beforeImg, .afterImg {
+    height: 160px;
+  }
+}
+
+/* Phone View */
+@media (max-width: 768px) {
+  .navigationBar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .navigationBar ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .imageSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trnasformCard {
+    width: 90%;
+  }
+
+  .img {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .beforeImg, .afterImg {
+    width: 90%;
+    height: 180px;
+  }
+
+  .clientDetails {
+    text-align: center;
+  }
+}
