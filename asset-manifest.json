@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/TPNutrition/static/css/main.dfef6b7e.css",
-    "main.js": "/TPNutrition/static/js/main.076c45ae.js",
+    "main.js": "/TPNutrition/static/js/main.6c229817.js",
     "static/js/453.2c7cae99.chunk.js": "/TPNutrition/static/js/453.2c7cae99.chunk.js",
     "static/media/tp_logo.pdf": "/TPNutrition/static/media/tp_logo.7dead9273fbc305b582c.pdf",
     "static/media/tanay.jpg": "/TPNutrition/static/media/tanay.69f90926b066030b8ae4.jpg",
@@ -12,11 +12,11 @@
     "static/media/logo.png": "/TPNutrition/static/media/logo.1cc811bab836c96e58e6.png",
     "index.html": "/TPNutrition/index.html",
     "main.dfef6b7e.css.map": "/TPNutrition/static/css/main.dfef6b7e.css.map",
-    "main.076c45ae.js.map": "/TPNutrition/static/js/main.076c45ae.js.map",
+    "main.6c229817.js.map": "/TPNutrition/static/js/main.6c229817.js.map",
     "453.2c7cae99.chunk.js.map": "/TPNutrition/static/js/453.2c7cae99.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dfef6b7e.css",
-    "static/js/main.076c45ae.js"
+    "static/js/main.6c229817.js"
   ]
 }
