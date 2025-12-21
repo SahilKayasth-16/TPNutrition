@@ -13,7 +13,7 @@ const AdminLogin = () => {
 const handleSubmit = async(e) => {
     e.preventDefault();
     try {
-        const res = await fetch(`${process.env.REACT_APP_API_URL}/admin/login`,
+        const res = await fetch("https://tpnutrition-backend.onrender.com/admin/login",
             {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
