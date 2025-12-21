@@ -47,14 +47,20 @@ const Home = () => {
                     </p>
                     <div className="qualification">
                         <ul>
-                            <li>Certified Personal trainer - Active Fitness Gym</li>
-                            <li>Nutrition expert - ISSA Certified</li>
+                            <li>Personal Trainer EREPS Level 4</li>
+                            <li>Nutritionist</li>
+                            <li>Strength & Conditioning Coach</li>
                         </ul>
+                    <p><h3><b>EXPERT IN:</b></h3></p>
+                        <li>Fatloss</li>
+                        <li>Strength training</li>
+                        <li>Tabata & funtional training</li>
                     </div>
 
-                    <a href="#">
+                    <Link to="/Form">
                         <button onClick={goToForm}>Book an appointment</button>
-                    </a>
+                    </Link>
+                        
                 </div>
                 <div className="social_media">
                         <ul>
@@ -63,9 +69,6 @@ const Home = () => {
                             </a>
                             <a href="https://facebook.com/tanay.parmar.752" target="_blank" rel="noopener noreferrer">
                                 <li><i className="fa-brands fa-facebook-f"></i></li>
-                            </a>
-                            <a href="#" target="_blank" rel="noopener noreferrer">
-                                <li><i className="fa-brands fa-linkedin-in"></i></li>
                             </a>
                         </ul>
                 </div>

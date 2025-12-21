@@ -3,9 +3,13 @@ import { Link } from "react-router-dom";
 import "../styles/About.css";
 import Logo from '../assets/logo.png';
 import pdf from '../assets/tp_logo.pdf';
-import certificate from '../assets/certificate.jpg';
-import certificate1 from '../assets/certificate1.jpg';
-import certificate2 from '../assets/certificate2.jpg';
+import FI_FITLINK from '../assets/Fitness_Instructor_FITLINK.jpeg';
+import GOMZI from '../assets/GOMZI_Certificate.jpeg';
+import NCVET from '../assets/NCVET_Certificate.jpeg';
+import PT_FITLINK from '../assets/Personal_Trainer_FITLINK.jpeg';
+import PT_FSSA from '../assets/Personal_Trainer_FSSA.jpg';
+import PT_SAHSS from '../assets/Personal_Trainer_SAHSS.png';
+import SUPPLEMENT_FITLINK from '../assets/Supplementation_FITLINK.jpeg';
 
 const About = () => {
     return (
@@ -37,50 +41,92 @@ const About = () => {
 
             <section>
                     <div className="Education">
-                        <p><strong>Course Name:</strong> Bachelor of Physiotherapy(BPT)</p>
-                        <p><strong>College Name:</strong>Uka Tarsadia University, Maliba Campus</p>
-                        <p><strong>CGPA:</strong>8.22 (SEM 3)</p><br />
+                        <h3>Education:</h3>
+                        <p><strong>Course Name:</strong> Pursuing Bachelor of Physiotherapy(BPT)</p>
+                        <p><strong>College Name:</strong>Shrimad Rajchandra College of  Physiotherapy, Uka Tarsadia University, Maliba Campus</p>
+                    </div><br /><br />
 
-                        <p><strong>Course Name:</strong>Higher Secondary Certificate(HSC)</p>
-                        <p><strong>School Name:</strong>SBR Science School, Bardoli</p>
-                        <p><strong>Percentage:</strong> 83.33%</p><br />
-
-                        <p><strong>Course Name:</strong> Secondary School Certificate(SSC)</p>
-                        <p><strong>School Name:</strong>Parsi Trust English Medium School, Bardoli</p>
-                        <p><strong>Percentage:</strong> 87.59%</p><br />
-                    </div>
+                    
 
                     <div className="Certifications">
+                    <h3>Certifications:</h3>
                         <div className="part">
                             <div className="item">
                                 <div className="image">
-                                    <img src={certificate} alt="There is an logo" height={125} width={125} id='logo'/>
+                                    <a href={FI_FITLINK} target="_blank" rel="noreferrer noopener">
+                                        <img src={FI_FITLINK} alt="There is an logo" height={125} width={125} id='logo'/>
+                                    </a>    
                                 </div>
                                 <div className="description1">
-                                    <p><strong>Course Name:</strong> Certified Personal Trainer (CPT)</p>
-                                    <p><strong>Issued By:</strong> National Academy of Sports Medicine (NASM)</p>
+                                    <p><strong>Issued By: </strong>Fitness Instructor Certificate by Fitlink</p>
                                 </div>    
                             </div>
 
                             <div className="item">
                                 <div className="image">
-                                    <img src={certificate1} alt="There is an logo" height={125} width={125} id='logo'/>
+                                    <a href={GOMZI} target="_blank" rel="noreferrer noopener">
+                                        <img src={GOMZI} alt="There is an logo" height={125} width={125} id='logo'/>
+                                    </a> 
                                 </div>
                                 <div className="description">
-                                    <p><strong>Course Name:</strong> Certified Nutritionist </p>
-                                    <p><strong>Issued By:</strong>FAAC</p>
+                                    <p><strong>Issued By: </strong>GOMZI International Institute of Teaching</p>
                                 </div>
                             </div>
 
                             <div className="item">
                                 <div className="image">
-                                    <img src={certificate2} alt="There is an logo" height={125} width={125} id='logo'/>
+                                    <a href={NCVET} target="_blank" rel="noreferrer noopener">
+                                        <img src={NCVET} alt="There is an logo" height={125} width={125} id='logo'/>
+                                    </a>
                                 </div>
                                 <div className="description">
-                                    <p><strong>Course Name:</strong>Certified Fitness Professional (CFP)</p>
-                                    <p><strong>Issued By:</strong> American Council on Exercise (ACE)</p>
-                                </div>   
-                            </div>     
+                                    <p><strong>Issued By: </strong>National Council for Vocational Education & Training</p>
+                                </div>
+                            </div>
+
+                            <div className="item">
+                                <div className="image">
+                                    <a href={PT_FITLINK} target="_blank" rel="noreferrer noopener">
+                                        <img src={PT_FITLINK} alt="There is an logo" height={125} width={125} id='logo'/>
+                                    </a> 
+                                </div>
+                                <div className="description">
+                                    <p><strong>Issued By: </strong>Personal Trainer Certificate by Fitlink</p>
+                                </div>
+                            </div>
+
+                            <div className="item">
+                                <div className="image">
+                                    <a href={PT_FSSA}  target="_blank" rel="noreferrer noopener">
+                                        <img src={PT_FSSA} alt="There is an logo" height={125} width={125} id='logo'/>
+                                    </a>
+                                </div>
+                                <div className="description">
+                                    <p><strong>Issued By: </strong>Personal Trainer Certificate by Fitness & Sports Science Association</p>
+                                </div>
+                            </div>
+
+                            <div className="item">
+                                <div className="image">
+                                    <a href={PT_SAHSS} target="_blank" rel="noreferrer noopener">
+                                        <img src={PT_SAHSS} alt="There is an logo" height={125} width={125} id='logo'/>
+                                    </a>  
+                                </div>
+                                <div className="description">
+                                    <p><strong>Issued By: </strong>Personal Trainer Certificate by SAHSS & FSSA</p>
+                                </div>
+                            </div>
+
+                            <div className="item">
+                                <div className="image">
+                                    <a href={SUPPLEMENT_FITLINK} target="_blank" rel="noreferrer noopener">
+                                        <img src={SUPPLEMENT_FITLINK} alt="There is an logo" height={125} width={125} id='logo'/>
+                                    </a>                               
+                                </div>
+                                <div className="description">
+                                    <p><strong>Issued By: </strong>Sports Nutrition  & Supplementation Certificate by Fitlink</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
             </section>

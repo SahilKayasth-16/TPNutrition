@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from './components/Home';
 import About from './components/About';
 import Form from './components/Form';
@@ -9,7 +9,6 @@ import AdminDashboard from "./components/AdminDashboard";
 
 function App() {
   return (
-    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
@@ -17,8 +16,7 @@ function App() {
         <Route path="/Transformation" element={<Transformation />} />  
         <Route path="/admin/login" element={<AdminLogin />} />
         <Route path="/admin/dashboard" element={<AdminDashboard />} />
-      </Routes>
-    </Router>   
+      </Routes>  
   );
 }
 
