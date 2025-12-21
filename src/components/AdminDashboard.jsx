@@ -14,7 +14,7 @@ const AdminDashboard = () => {
 
     //Fetch information from backend
     useEffect(() => {
-        fetch("http://localhost:5050/testimonial")
+        fetch(`${process.env.REACT_APP_API_URL}/testimonial`)
         .then((res) => res.json())
         .then((result) => setData(result))
         .catch((err) => console.error("Error in fetching data: ", err));
@@ -33,7 +33,7 @@ const AdminDashboard = () => {
     //for submitting new testimonial
     const handleSubmit = async(e) => {
         e.preventDefault();
-        const formData = new formData();
+        const formData = new FormData();
         formData.append("name", form.name);
         formData.append("age", form.age);
         formData.append("goal", form.goal);
@@ -42,7 +42,7 @@ const AdminDashboard = () => {
         formData.append("imageAfter", form.imageAfter);
 
         try {
-            const res = await fetch("http://localhost:5050/testimonial", {
+            const res = await fetch(`${process.env.REACT_APP_API_URL}/testimonial`, {
                 method: "POST",
                 body: formData
             });
@@ -63,7 +63,7 @@ const AdminDashboard = () => {
         }
 
         try {
-            const res = await fetch(`http://localhost:5050/testimonial/${id}`, {
+            const res = await fetch(`${process.env.REACT_APP_API_URL}/testimonial/{id}`, {
                 method: "DELETE",
             });
             const result = await res.json();
@@ -138,7 +138,7 @@ const AdminDashboard = () => {
               <tr key={item._id}>
                 <td>
                   <img
-                    src={`http://localhost:5050${item.imageBefore}`}
+                    src={`${process.env.REACT_APP_API_URL}${item.imageBefore}`}
                     alt="before"
                     height="100"
                     width="100"
@@ -147,7 +147,7 @@ const AdminDashboard = () => {
                 </td>
                 <td>
                   <img
-                    src={`http://localhost:5050${item.imageAfter}`}
+                    src={`${process.env.REACT_APP_API_URL}${item.imageAfter}`}
                     alt="after"
                     height="100"
                     width="100"
