@@ -63,12 +63,12 @@ const AdminDashboard = () => {
         }
 
         try {
-            const res = await fetch(`${process.env.REACT_APP_API_URL}/testimonial/{id}`, {
+            const res = await fetch(`${process.env.REACT_APP_API_URL}/testimonial/${id}`, {
                 method: "DELETE",
             });
             const result = await res.json();
             alert(result.message);
-            setData(data.filter((item) => item._id !== id));
+            setData((prevData) => prevData.filter((item) => item._id !== id));
         } catch(err) {
             console.error("Error deleting testimonial:", err);
             alert("Error deleting testimonial.");

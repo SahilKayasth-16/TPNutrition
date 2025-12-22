@@ -8,7 +8,7 @@ const Transformation = () => {
   const [testimonials, setTestimonials] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5050/testimonial")
+    fetch("https://tpnutrition-backend.onrender.com/testimonial")
       .then((res) => res.json())
       .then((data) => {
       setTestimonials(data);

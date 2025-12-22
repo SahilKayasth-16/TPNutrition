@@ -13,6 +13,8 @@ const AdminLogin = () => {
 const handleSubmit = async(e) => {
     e.preventDefault();
     try {
+      console.log("API URL:", process.env.REACT_APP_API_URL);
+
         const res = await fetch("https://tpnutrition-backend.onrender.com/admin/login",
             {
                 method: 'POST',
