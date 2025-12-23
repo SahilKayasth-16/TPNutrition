@@ -76,7 +76,7 @@ const AdminDashboard = () => {
   };
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div style={{ padding: "20px", margin: "auto" }}>
       <h1>Admin Dashboard</h1>
 
       <form onSubmit={handleSubmit}>
