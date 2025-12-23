@@ -74,7 +74,7 @@ const Form = () => {
         e.preventDefault();
         if (validate()) {
             try {
-                const response = await fetch('http://localhost:5050/consultation', {
+                const response = await fetch(`${process.env.REACT_APP_API_URL}/consultation`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(formData)
