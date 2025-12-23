@@ -109,7 +109,7 @@ const Form = () => {
                         goal: ''
                     });
                 } else {
-                    alert('❌ ' + res.message);
+                    alert(res.message || "something went wrong");
                 }
             }
             catch (err) {
