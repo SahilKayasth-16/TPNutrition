@@ -72,7 +72,8 @@ h1, h2 {
 }
 
 .form {
-    
+    justify-content: center;
+    align-items: center;
     width: 500px;
     margin: auto; 
     margin-left: auto;
