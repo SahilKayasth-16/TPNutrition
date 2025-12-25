@@ -82,7 +82,7 @@ const Form = () => {
 
                 const res = await response.json();
                 if (res.success) {
-                    alert('Form submitted successfully!');
+                    alert(res.message || 'Form submitted successfully!');
                     console.log('Response from server:', res);
 
                     // Reset form after success
