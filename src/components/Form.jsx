@@ -153,7 +153,8 @@ const Form = () => {
                     The information you provide is confidential and will be treated accordingly.</p>
                 </div>
 
-                <form onSubmit={handleSubmit} className="form">
+                <div className='consultationForm'>
+                    <form onSubmit={handleSubmit} className="form">
                     <label>Name:</label>
                     <input type="text" name="name" value={formData.name} onChange={handleChange} />
                     {errors.name && <p style={{color: 'red'}}>{errors.name}</p>}<br /><br />
@@ -218,6 +219,7 @@ const Form = () => {
 
                     <button type="submit">Submit Form</button>
                 </form>
+                </div>
 
                 <br />
                 <h1>Thank You for Consultation.</h1>

@@ -130,6 +130,10 @@ button[type="submit"]:active {
     transform: scale(0.98);
 }
 
+.consultationForm {
+    padding-left: 56.5mm;
+}
+
 /* Disclaimer */
 .disclaimer {
     margin: 20px auto;
