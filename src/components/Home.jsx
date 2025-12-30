@@ -70,6 +70,9 @@ const Home = () => {
                             <a href="https://facebook.com/tanay.parmar.752" target="_blank" rel="noopener noreferrer">
                                 <li><i className="fa-brands fa-facebook-f"></i></li>
                             </a>
+                            <a href="https://wa.me/919313559080?text=Hello%20I%20want%20to%20book%20a%20consultation" target="_blank" rel="noopener noreferrer">
+                                <li><i class="fa-brands fa-whatsapp"></i></li>
+                            </a>
                         </ul>
                 </div>
             </section>
