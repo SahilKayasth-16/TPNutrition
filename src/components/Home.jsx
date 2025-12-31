@@ -52,9 +52,11 @@ const Home = () => {
                             <li>Strength & Conditioning Coach</li>
                         </ul>
                     <p><h3><b>EXPERT IN:</b></h3></p>
+                    <ul>
                         <li>Fatloss</li>
                         <li>Strength training</li>
                         <li>Tabata & funtional training</li>
+                    </ul>
                     </div>
 
                     <Link to="/Form">
