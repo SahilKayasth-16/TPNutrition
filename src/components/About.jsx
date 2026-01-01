@@ -54,7 +54,7 @@ const About = () => {
                             <div className="item">
                                 <div className="image">
                                     <a href={FI_FITLINK} target="_blank" rel="noreferrer noopener">
-                                        <img src={FI_FITLINK} alt="There is an logo" height={125} width={125} id='logo'/>
+                                        <img src={FI_FITLINK} alt="There is an logo" height={125} width={125} id='cert_img'/>
                                     </a>    
                                 </div>
                                 <div className="description1">
@@ -65,7 +65,7 @@ const About = () => {
                             <div className="item">
                                 <div className="image">
                                     <a href={GOMZI} target="_blank" rel="noreferrer noopener">
-                                        <img src={GOMZI} alt="There is an logo" height={125} width={125} id='logo'/>
+                                        <img src={GOMZI} alt="There is an logo" height={125} width={125} id='cert_img'/>
                                     </a> 
                                 </div>
                                 <div className="description">
@@ -76,7 +76,7 @@ const About = () => {
                             <div className="item">
                                 <div className="image">
                                     <a href={NCVET} target="_blank" rel="noreferrer noopener">
-                                        <img src={NCVET} alt="There is an logo" height={125} width={125} id='logo'/>
+                                        <img src={NCVET} alt="There is an logo" height={125} width={125} id='cert_img'/>
                                     </a>
                                 </div>
                                 <div className="description">
@@ -87,7 +87,7 @@ const About = () => {
                             <div className="item">
                                 <div className="image">
                                     <a href={PT_FITLINK} target="_blank" rel="noreferrer noopener">
-                                        <img src={PT_FITLINK} alt="There is an logo" height={125} width={125} id='logo'/>
+                                        <img src={PT_FITLINK} alt="There is an logo" height={125} width={125} id='cert_img'/>
                                     </a> 
                                 </div>
                                 <div className="description">
@@ -98,7 +98,7 @@ const About = () => {
                             <div className="item">
                                 <div className="image">
                                     <a href={PT_FSSA}  target="_blank" rel="noreferrer noopener">
-                                        <img src={PT_FSSA} alt="There is an logo" height={125} width={125} id='logo'/>
+                                        <img src={PT_FSSA} alt="There is an logo" height={125} width={125} id='cert_img'/>
                                     </a>
                                 </div>
                                 <div className="description">
@@ -109,7 +109,7 @@ const About = () => {
                             <div className="item">
                                 <div className="image">
                                     <a href={PT_SAHSS} target="_blank" rel="noreferrer noopener">
-                                        <img src={PT_SAHSS} alt="There is an logo" height={125} width={125} id='logo'/>
+                                        <img src={PT_SAHSS} alt="There is an logo" height={125} width={125} id='cert_img'/>
                                     </a>  
                                 </div>
                                 <div className="description">
@@ -120,7 +120,7 @@ const About = () => {
                             <div className="item">
                                 <div className="image">
                                     <a href={SUPPLEMENT_FITLINK} target="_blank" rel="noreferrer noopener">
-                                        <img src={SUPPLEMENT_FITLINK} alt="There is an logo" height={125} width={125} id='logo'/>
+                                        <img src={SUPPLEMENT_FITLINK} alt="There is an logo" height={125} width={125} id='cert_img'/>
                                     </a>                               
                                 </div>
                                 <div className="description">

@@ -172,4 +172,8 @@ body {
   .item {
     width: 90%;
   }
+  
+  #cert_img {
+    border-radius: 50%;
+  }
 }
